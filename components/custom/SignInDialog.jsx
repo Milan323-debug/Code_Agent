@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import Lookup from "@/data/lookup";
+import Lookup from "../../data/Lookup";
 import { Button } from "../ui/button";
 import {
   Dialog,
