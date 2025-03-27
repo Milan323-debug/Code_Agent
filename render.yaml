@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: code-agent
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NEXT_PUBLIC_CONVEX_URL
+        sync: false
+      - key: NEXT_PUBLIC_GEMINI_API_KEY
+        sync: false
+    healthCheckPath: /
+    autoDeploy: true 
